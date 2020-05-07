@@ -1,0 +1,24 @@
+{
+	"Prefix": "-",
+	"PublicLogID": "695969238321463338",
+    "Warnings": [],
+    "Rules": [
+		{
+			"Title":"Rule 1",
+			"Infractions":"1",
+			"Description":"Don't spam in chat"
+		},
+		{
+			"Title":"Rule 2",
+			"Infractions":"1",
+			"Description":"Don't play loud or disturbing sounds in voice channels"
+		},
+		{
+			"Title":"Rule 3",
+			"Infractions":"2",
+			"Description":"Don't argue with moderators"
+		}
+	],
+	"SendRulesInDifferentMessages": true,
+    "RuleColor": "#0091ff"
+}

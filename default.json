@@ -1,0 +1,10 @@
+{
+	"Prefix": "-",
+	"PublicLogID": "",
+	"Infractions": [],
+	"KickAfterInfractions": 3,
+	"BanAfterInfractions": 5,
+    "Rules": [],
+	"SendRulesInDifferentMessages": false,
+    "RuleColor": "#0091ff"
+}

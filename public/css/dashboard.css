@@ -1,0 +1,98 @@
+
+.ContainerDiv{
+
+    width: 30cm;
+    margin: 2cm auto 2cm auto;
+
+}
+
+.TextContainer{
+
+    width: 100%;
+
+    margin-bottom: 0.5cm;
+
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: .6cm;
+
+    text-align: center;
+
+}
+
+.ServerObject{
+
+    width: 100%;
+    height: 1.5cm;
+
+    background: var(--dark-color-3);
+
+    border-radius: .25cm;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ServerObject + .ServerObject{
+
+    margin-top: 0.5cm;
+
+}
+
+.ServerIcon{
+
+    width: 1cm;
+    height: 1cm;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    border-radius: 50%;
+
+    margin: 0.25cm;
+
+}
+
+.ServerText{
+
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: .5cm;
+
+}
+
+.ServerButton{
+
+    width: 5cm;
+    height: 1cm;
+
+    background: var(--dark-color-7);
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    border-radius: .125cm;
+
+    margin: .25cm .25cm .25cm auto;
+    padding-top: .18cm;
+
+    box-sizing: border-box;
+
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: .5cm;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.ActiveButton{
+
+    background: var(--main-color);
+
+}

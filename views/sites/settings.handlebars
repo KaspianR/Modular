@@ -1,0 +1,43 @@
+<div class="ContainerDiv" onchange="CheckChanges()">
+    <div class="TextContainer">
+        <a>Settings</a>
+    </div>
+    <div class="SettingDiv">
+        <a class="DescriptionText">Command prefix</a>
+        <input class="InputField SingleInputField" type="text" id="CommandPrefix">
+    </div>
+    <div class="SettingDiv">
+        <a class="DescriptionText">Public log channel ID</a>
+        <input class="InputField SingleInputField" type="number" id="PublicLogID">
+    </div>
+        <div class="SettingDiv">
+        <a class="DescriptionText">Kick after X infractions</a>
+        <input class="InputField SingleInputField" type="number" id="KickAfterInfractions">
+    </div>
+        <div class="SettingDiv">
+        <a class="DescriptionText">Ban after X infractions</a>
+        <input class="InputField SingleInputField" type="number" id="BanAfterInfractions">
+    </div>
+    <hr class="SectionDivider">
+    <div class="TextContainer">
+        <a>Rules</a>
+    </div>
+    <div class="RuleContainer">
+        <button class="RuleButton AddButton" onclick="AddNewRule()">Add new rule</button>
+    </div>
+    <div class="SettingDiv">
+        <a class="DescriptionText">Send all rules in different messages</a>
+        <label class="ToggleSwitch">
+            <input type="checkbox" id="SendRulesInDifferentMessages">
+            <span class="ToggleSlider"></span>
+        </label>
+    </div>
+    <div class="SettingDiv">
+        <a class="DescriptionText">Embed color</a>
+        <input class="InputField SingleInputField" type="text" id="RuleColor">
+    </div>
+</div>
+<div class="SavePromptDiv">
+    <a class="SaveText">You have unsaved changes</a>
+    <button class="SaveButton" onclick="SaveData()">Save</button>
+</div>

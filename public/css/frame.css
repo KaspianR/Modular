@@ -1,0 +1,253 @@
+
+::-webkit-scrollbar {
+    width: 0.5cm;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #141414; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #0f0f0f;
+}
+
+body{
+
+    margin: 0;
+
+    background: var(--dark-color-3);
+
+}
+
+:root {
+
+    --main-color: #FD413C;
+    --dark-main-color: #CB3430;
+    --monochromatic-color: #e46863;
+    --analogous-color: #fd723c;
+    
+    --text-color: #d1d9d9;
+    --transparent-text-color: #d2dada40;
+
+    --dark-color-1: #121212;
+    --dark-color-2: #1E1E1E;
+    --dark-color-3: #232323;
+    --dark-color-4: #252525;
+    --dark-color-5: #272727;
+    --dark-color-6: #2C2C2C;
+    --dark-color-7: #2F2F2F;
+    --dark-color-8: #333333;
+    --dark-color-9: #353535;
+    --dark-color-10: #383838;
+
+    --grey-color-1: #717171;
+    --grey-color-2: #A0A0A0;
+
+    --blue-color: #00437F;
+    --dark-blue-color: #002F59;
+    --red-color: #7F1600;
+    --dark-red-color: #590F00;
+    --green-color: #0D7F00;
+    --dark-green-color: #095900;
+
+}
+
+.LoadingDiv{
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--dark-color-2);
+
+    z-index: 100;
+
+}
+
+.LoadingDiv span{
+
+    width: 0.5cm;
+    height: 0.5cm;
+
+    margin-right: 0.25cm;
+
+    border-radius: 50%;
+
+    background: var(--text-color);
+
+    display: inline-block;
+
+    animation: loading .9s ease-in-out 0s infinite;
+
+}
+
+@keyframes loading{
+
+    50%{
+        opacity: 0;
+        transform: scale(.5) translateY(.125cm);
+    }
+
+}
+
+.NavigationDiv{
+
+    width: 100%;
+    height: 2cm;
+
+    position: fixed;
+
+    background: var(--dark-color-5);
+
+    z-index: 50;
+
+}
+
+.IconDiv{
+
+    width: 2cm;
+    height: 2cm;
+
+    float: left;
+
+}
+
+.IconImage{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.NavigationContainer{
+
+    height: 100%;
+
+    margin: 0;
+
+    float: left;
+
+}
+
+.NavigationList{
+
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.NavigationItem{
+
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+
+    float: left;
+    list-style-type: none;
+
+    display: table;
+
+}
+
+.NavigationText{
+
+    color: var(--text-color);
+    text-decoration: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vh;
+
+    display: table-cell;
+    vertical-align: middle;
+
+    padding: 0 0.5cm;
+
+}
+
+.NavigationTextSelected{
+
+    color: var(--main-color);
+    font-weight: 900;
+
+}
+
+.UserDiv{
+
+    height: 100%;
+
+    margin-right: 0.5cm;
+
+    display: table;
+
+    float: right;
+
+}
+
+.UserCenterer{
+
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.UserAvatar{
+
+    width: 1cm;
+    height: 1cm;
+
+    margin-right: 0.25cm;
+
+    border-radius: 50%;
+
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.UserText{
+
+    color: var(--text-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.5cm;
+    font-weight: 900;
+
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.LoginButton{
+    width: 4cm;
+    height: 1.5cm;
+    margin: .25cm;
+    background: var(--dark-color-10);
+    border-radius: .25cm;
+    color: var(--grey-color-1);
+    font-family: 'Roboto', sans-serif;
+    font-size: .75cm;
+    font-weight: 900;
+    line-height: 1.5cm;
+    text-decoration: none;
+    float: right;
+    text-align: center;
+}
+
+.EmptySpaceDiv{
+
+    height: 2cm;
+
+}

@@ -1,0 +1,262 @@
+
+.ContainerDiv{
+    width: 20cm;
+    margin: 2cm auto 2cm auto;
+}
+
+.TextContainer{
+    width: 100%;
+    margin-bottom: 0.5cm;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: .6cm;
+    text-align: center;
+}
+
+.SettingDiv{
+    width: 100%;
+    height: 1.5cm;
+    position: relative;
+    display: table;
+    margin-bottom: 0.25cm;
+}
+
+.DescriptionText{
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: .6cm;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ToggleSwitch {
+    width: 1.5cm;
+    height: 0.8cm;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.Switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.ToggleSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-color-7);
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 0.8cm;
+}
+
+.ToggleSlider:before {
+    position: absolute;
+    content: "";
+    height: 0.6cm;
+    width: 0.6cm;
+    left: 0.1cm;
+    bottom: 0.1cm;
+    background-color: var(--grey-color-2);
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+input:checked + .ToggleSlider {
+    background-color: var(--dark-main-color);
+}
+
+input:checked + .ToggleSlider:before {
+    -webkit-transform: translateX(0.7cm);
+    -ms-transform: translateX(0.7cm);
+    transform: translateX(0.7cm);
+}
+
+.InputField{
+    width: 100%;
+    height: 1.25cm;
+    border: none;
+    border-radius: 0.25cm;
+    padding: 0.25cm;
+    box-sizing: border-box;
+    background: var(--dark-color-7);
+    color: var(--text-color);
+    font-size: 0.5cm;
+    font-family: 'Poppins', sans-serif;
+}
+
+.SingleInputField{
+    width: 7cm;
+    position: absolute;
+    top: 50%;
+    right: 0cm;
+    transform: translateY(-50%);
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.InputField:focus{
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.InputField::-webkit-outer-spin-button,
+.InputField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.InputField[type=number] {
+  -moz-appearance: textfield;
+}
+
+.SectionDivider{
+    border: .02cm solid var(--transparent-text-color);
+    margin-bottom: 1cm;
+}
+
+.RuleContainer{
+    background: var(--dark-color-2);
+    width: 100%;
+    padding: 0.25cm;
+    box-sizing: border-box;
+    border-radius: .25cm;
+}
+
+.RuleDiv{
+    background: var(--dark-color-3);
+    width: 100%;
+    width: 100%;
+    padding: 0.25cm;
+    box-sizing: border-box;
+    border-radius: .25cm;
+    overflow: hidden;
+    margin-bottom: .25cm;
+}
+
+.TitleField{
+    width: calc(80% - .125cm);
+    margin-right: .25cm;
+}
+
+.InfractionsField{
+    width: calc(20% - .125cm);
+}
+
+.BigInputField{
+    margin: .25cm 0 .25cm 0;
+    min-height: 4cm;
+    resize: none;
+}
+
+.RuleButton{
+    width: calc(50% - .125cm);
+    height: 1cm;
+    border: none;
+    border-radius: 0.25cm;
+    color: var(--text-color);
+    font-size: 0.5cm;
+    font-family: 'Poppins', sans-serif;
+}
+
+.RuleButton:focus{
+    outline: none;
+}
+
+.DuplicateButton{
+    margin-right: 0.25cm;
+    background: var(--blue-color);
+}
+
+.DuplicateButton:hover{
+    background: var(--dark-blue-color);
+}
+.DuplicateButton:focus{
+    background: var(--dark-blue-color);
+}
+
+.DeleteButton{
+    background: var(--red-color);
+    float: right;
+}
+
+.DeleteButton:hover{
+    background: var(--dark-red-color);
+}
+.DeleteButton:focus{
+    background: var(--dark-red-color);
+}
+
+.AddButton{
+    background: var(--green-color);
+    width: 100%;
+}
+
+.AddButton:hover{
+    background: var(--dark-green-color);
+}
+.AddButton:focus{
+    background: var(--dark-green-color);
+}
+
+.SavePromptDiv{
+    width: 25cm;
+    height: 1.5cm;
+    padding: 0.25cm 0.25cm 0.25cm 0.4cm;
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    background: var(--dark-color-6);
+    border-radius: 0.25cm;
+    display: table;
+    transition: transform .25s ease-in-out, bottom .25s ease-in-out;
+}
+
+.NeedToSave{
+    bottom: 0.5cm;
+    transform: translateX(-50%);
+}
+
+.SaveText{
+    display: table-cell;
+    vertical-align: middle;
+    color: var(--text-color);
+    font-size: 0.5cm;
+    font-family: 'Poppins', sans-serif;
+}
+
+.SaveButton{
+    width: 10cm;
+    height: 100%;
+    border: none;
+    background: var(--green-color);
+    color: var(--text-color);
+    font-size: 0.5cm;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.25cm;
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+}
+
+.SaveButton:hover{
+    background: var(--dark-green-color);
+}
+
+.SaveButton:focus{
+    background: var(--dark-green-color);
+    outline: none;
+}

@@ -107,4 +107,4 @@ dist
 .tern-port
 
 #Private information
-saves/*
+saves/
